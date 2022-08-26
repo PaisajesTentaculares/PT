@@ -2,7 +2,8 @@ import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 import {FaBars, FaTimes} from 'react-icons/fa';
 import {AiOutlineMail} from 'react-icons/ai';
-import {Button} from './Button';
+//import {Button} from './Button';
+import { Button } from '@mui/material';
 import './Navbar.css';
 import { IconContext } from 'react-icons/lib';
 import { MdFingerprint } from 'react-icons/md';
@@ -27,7 +28,6 @@ function Navbar() {
     window.addEventListener('resize',showButton)
 
     return (
-        <>
 
             <nav className='navbar'>
               <div className='navbar-container container'>
@@ -47,14 +47,23 @@ function Navbar() {
                            {item.title}
                         </Link>
                       </li>
-                    )
-                  })}
-
-                  
+                    )})}
+                      <li className='nav-item'>
+                      <Link to='/Contacto' className='nav-links' onClick={closeMobileMenu}>
+                         <AiOutlineMail />
+                      </Link>
+                    </li>
                 </ul>
+                <div className='navbar-container-languaje'>
+                <Button sx={{borderRadius:50, color: '#5a5936', justify: "flex-end" }}>
+                ESP
+                </Button>
+                <Button sx={{ borderRadius:50, color: '#5a5936', justify: "flex-end" }}>
+                ENG
+                </Button>
+                </div>
               </div>
             </nav>
-        </>
       );
     }
     
