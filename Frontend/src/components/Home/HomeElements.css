@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Gopher Light';
+    src: url("../../Fonts/gopher_fonts/Gopher-Light.otf") format("opentype");
+}
+
+.Home{
+    background: #e1df89;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    position: sticky;
+    justify-content: space-between;
+    text-align:center;
+}
+
+.HomeImg{
+    width: 100%;
+    
+}
+
+.H1{
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Gopher Light';
+    font-style: normal;
+    font-weight: 100;
+
+    
+}

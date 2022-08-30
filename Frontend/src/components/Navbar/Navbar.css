@@ -1,0 +1,177 @@
+
+@font-face {
+    font-family: 'Gopher Bold';
+    src: url("../../Fonts/gopher_fonts/Gopher-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Gopher light';
+    src: url("../../Fonts/gopher_fonts/Gopher-Light.otf") format("opentype");
+}
+
+
+.Nav {
+    background: #e1df89;
+    height: 80px;
+    /*margin-top: -80px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 10; 
+    box-shadow: 0px 8px 8px -6px rgba(0,0,0,.5);
+    justify-content: space-between;
+}
+
+.NavbarContainer{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: 'Gopher Bold';
+    font-style: normal;
+    font-weight: 100;
+}
+
+.NavLogoR{
+    color: #242424;
+    justify-self: flex-start;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+    font-weight: bold;
+    text-decoration: none; 
+}
+
+.NavMenuIcon {
+    display: none
+  }
+
+.NavMenu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    margin-right: -22px;
+    
+}
+
+.NavItem {
+    height: 80;
+}
+
+.NavLinkS {
+    color: #242424;
+    display:flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Gopher Bold';
+    font-style: normal;
+    font-weight: 100;
+
+    
+}
+
+.NavLinkS:hover {
+    color: #fff;
+    display:flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 80px;
+    cursor: pointer;
+    border-bottom: 3px solid #24242442;
+    background: #b1b1b172;
+}
+
+.faBars {
+    color: #1f2013;
+    height: 80px;
+  }
+
+.NavBtn{
+    display: flex;
+    align-items: center;
+  }
+.NavBtnLinkR{
+    border-radius: 25%;
+    background: #065434;
+    white-space: nowrap;
+    padding: 10px 22px;
+    color: #010606;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+.NavBtnLinkR:hover{
+    border-radius: 50%;
+    background: #ffffff;
+    white-space: nowrap;
+    padding: 10px 22px;
+    color: #010606;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+@media screen and (max-width: 960px) {
+    .NavbarItems {
+        position: relative;
+      }
+    
+    .Nav {
+        background: #e1df89;
+        height: 80px;
+       /* margin-top: -80px;*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        position: sticky;
+        top: 0;
+        z-index: 10; 
+        transition: 0.8s all ease;
+    }
+    .NavMenuIcon {
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 24px;
+        transform: translate(-100, 60%);
+        font-size: 1.8rem;
+      }
+
+    
+    .NavMenu {
+        display: none;
+    }
+
+    .faBars {
+        color: #1f2013;
+        size: 1.5rem;
+      }
+    
+    .NavBtn{
+        display: none;
+      }
+}
